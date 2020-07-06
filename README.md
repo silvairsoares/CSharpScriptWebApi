@@ -1,10 +1,10 @@
-Related to the following commentary on question **16897**: https://github.com/dotnet/roslyn/issues/16897#issuecomment-654201654
+Related to the following commentary on question **[16897](https://github.com/dotnet/roslyn/issues/16897 "16897")**: https://github.com/dotnet/roslyn/issues/16897#issuecomment-654201654
 
 Code sample for executing dynamic expressions with **Microsoft.CodeAnalysis.CSharp.Scripting** features.
 
 Currently a performance problem documented in the issue https://github.com/dotnet/roslyn/issues/16897.
 
-I managed to greatly improve the performance problem, using an expression simplifier. In addition to using an empty script validator (singleton), injected into the controllers via **Microsoft.Extensions.DependencyInjection**.
+I managed to greatly improve the performance problem, using an [expression simplifier](https://github.com/silvairsoares/CSharpScriptWebApi/blob/master/CSharpScriptWebApi/Controllers/ScriptsController.cs "expression simplifier"). In addition to using an empty script validator (singleton), injected into the controllers via **Microsoft.Extensions.DependencyInjection**.
 
 This project is a simple Web API, configured to display the two endpoints "api/script/GlobalsParameter" and "api/script/SimplifyExpression" in the Swagger interface.
 
